@@ -1,0 +1,115 @@
+h1{
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: red;
+  font-size: 800%;
+  text-align: center;
+  margin: 0%;
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    justify-content: space-between;
+}
+a{
+   color:rgb(74, 72, 187);
+   font-family: "Changa One", sans-serif;
+}
+h3{
+
+  font-family: "Hanalei Fill", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color:brown;
+  font-size: 400%;
+  margin-bottom: 0%;
+}
+
+h4{
+  color: black;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal; 
+}
+#sbox{
+  background-color: #FFF4CC;
+  width: 40%;
+  height: 280px;
+  padding-top: 24px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 8px;
+  margin-bottom: 4%;
+  cursor: pointer;
+  transition: 
+  background-color 0.4s ease,
+  transform 0.2s ease,
+  box-shadow 0.3s ease;
+}
+#sbox:hover {
+  background-color: white; 
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px wheat;
+}
+@keyframes butt
+{
+  from {background-color: #1e3a8a;color: #ffffff;}
+  to {background-color: #14b8a6;color: black;}
+}
+#submit{
+  background-color: #1e3a8a;
+  color: white;
+  border-radius: 8px;
+  animation-name: butt;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+#inside{
+  display:grid;
+  justify-items:center;
+  row-gap: 15px;
+  column-gap: 10px;
+  
+}
+#about{
+  height: 80px;
+  
+}
+#list2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+body{
+  background-color: #FFF4CC;
+}
+#slider{
+  position: relative;
+  width: 600px;      
+  height: 480px;     
+  overflow: hidden;
+}
+#slider img{
+  position: absolute;
+  height: 460px;
+  width: 580px;
+  object-fit: cover;
+  opacity: 0;
+  animation: 9s infinite;
+  
+}
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 3s; }
+.slider img:nth-child(3) { animation-delay: 6s; }
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
